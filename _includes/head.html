@@ -3,69 +3,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {% assign title = page.title | default: site.title | escape %}
-  {% assign canonical = page.url | replace:'index.html','' | absolute_url %}
-  {% assign description = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | escape %}
-  <title>{{ title }}</title>
-  <meta name="description" content="{{ description }}">
-  {% if page.keywords %}
-    {% if page.keywords.first %}
-      {% assign keywords = page.keywords | join: ',' %}
-    {% else %}
-      {% assign keywords = page.keywords %}
-    {% endif %}
-    <meta name="keywords" content="{{ keywords }}">
-  {% endif %}
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  <link rel="canonical" href="{{ canonical }}">
-  {% assign feed_path = "/feed.xml" %}
-  {% if site.feed and site.feed.path %}
-    {% assign feed_path = site.feed.path %}
-  {% endif %}
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ feed_path | absolute_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-  {% include head_custom.html %}
+  <link rel="stylesheet" href="{{ "/assets/css/bootstrap.min.css" | prepend: site.baseurl }}">
+  <!-- <link rel="stylesheet" href="{{ "/assets/css/icard_resume.css" | prepend: site.baseurl }}"> -->
+  <link rel="stylesheet" href="{{ "/assets/css/font-awesome.min.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/css/blog.css" | prepend: site.baseurl }}" >
+  <link rel="stylesheet" href="{{ "/assets/css/syntax.css" | prepend: site.baseurl }}">
 
-  {% if site.facebook_app_id %}
-    <meta property="fb:admins" content="{{ site.facebook_app_id }}">
-    <meta property="og:title" content="{{ title }}">
-    <meta property="og:site_name" content="{{ site.title | escape }}">
-    <meta property="og:url" content="{{ canonical }}">
-    <meta property="og:description" content="{{ description }}">
-    {% if site.facebook_page %}<meta property="article:author" content="{{ site.facebook_page }}">{% endif %}
-    {% if page.facebook.image %}
-      <meta property="og:image" content="{{ page.facebook.image }}">
-    {% elsif site.facebook_image %}
-      <meta property="og:image" content="{{ site.facebook_image }}">
-    {% endif %}
-  {% endif %}
-  <meta name="twitter:card" content="{{ page.twitter_card.type | default: "summary" }}">
-  {% if site.twitter_username %}<meta name="twitter:site" content="{{ site.twitter_username }}">{% endif %}
-  <meta name="twitter:title" content="{{ title | truncate: 70 }}">
-  <meta name="twitter:description" content="{{ description | truncate: 200 }}">
-  {% if page.twitter_card.creator %}
-    <meta name="twitter:creator" content="{{ page.twitter_card.creator }}">
-  {% elsif site.twitter_username %}
-    <meta name="twitter:creator" content="{{ site.twitter_username }}">
-  {% endif %}
-  {% if page.twitter_card.image %}
-    {% if page.twitter_card.type == 'gallery' %}
-      <meta name="twitter:image0" content="{{ page.twitter_card.image }}">
-      <meta name="twitter:image1" content="{{ page.twitter_card.image1 }}">
-      <meta name="twitter:image2" content="{{ page.twitter_card.image2 }}">
-      <meta name="twitter:image3" content="{{ page.twitter_card.image3 }}">
-    {% else %}
-      <meta name="twitter:image:src" content="{{ page.twitter_card.image }}">
-      {% if page.twitter_card.type == 'photo' %}
-        {% if page.twitter_card.width %}<meta name="twitter:image:width" content="{{ page.twitter_card.width }}">{% endif %}
-        {% if page.twitter_card.height %}<meta name="twitter:image:height" content="{{ page.twitter_card.height }}">{% endif %}
-      {% endif %}
-    {% endif %}
-  {% elsif site.twitter_image %}
-    <meta name="twitter:image:src" content="{{ site.twitter_image }}">
-  {% endif %}
+  <link rel="icon" type="image/png" href="{{ site.favicon }}">
 
-  {% include fonts.html %}
-  {% include google_analytics.html %}
+  <!-- Google fonts -->
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans:300' type='text/css'>
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Source+Sans+Pro' type='text/css'>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="assets/js/html5shiv.min.js"></script>
+  <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+
 </head>
