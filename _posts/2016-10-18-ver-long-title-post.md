@@ -1,5 +1,5 @@
 ---
-title: For Example of very Long Title Would Be Typography Elements in One
+title: Fo E of very Long Title Would Be Typography Elements in One
 updated: 2017-6-24 23:37
 ---
 
