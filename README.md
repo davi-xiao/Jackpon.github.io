@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+## Welcome to Jackpon Gitblog
+该博客是利用 GitHub Pages+Jekyll 搭建而成，并参照了Jekyll的开源模板，
+在此非常感谢GitHub Pages这么好用的项目，也感谢为此模板做出贡献的大佬们，
+该模板是走简约风格，但却很实用，功能就：看博文和作者简介；
+详情欢迎访问我的Gitblog：https://jackpon.github.io
 
-You can use the [editor on GitHub](https://github.com/Jackpon/Jackpon.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## 如果你对此感兴趣
+那么你只需几个步骤就可以搭建基于GitHub Pages的个人博客网站；
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Fork该项目，将在你仓库的该项目取名为 “你的用户名.github.io”(setting那改)，
+此时在setting的GitHub Pages那一栏就已经生成你的个人博客网站了，只不过样式是我的；
+简单介绍下各个文件目录代表什么：
+index.html：这是你博客的主页面，里面的内容就是你的主页了；
+about.md: 个人信息简介；
+_config.yml：这是你博客的基本配置文件，里面有你博客的名字，以及存放博主的一些基本信息；
+_layouts：这文件夹里面存放你每个页面的设计，一般有default.html（默认页面）和posts.html（博文页面）；
+_includes：这个文件夹里的的内容将会通用到你博客每个页面，起到一种便利的作用；
+_posts：这里面装的就是你的博文啦，记住，要用markdown语法写，要不上传会失败的。
+# git clone到你本地，修改一下文件；
+# 修改_config.yml、about.md、README.md和_posts；（修改样式在_sass）
+# 最后一步，将该项目git push到你的项目
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Jackpon/Jackpon.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+# 补充：对于git的基本操作如果不熟悉可以看看我的一篇文章——Git入门操作（https://www.zhihu.com/people/Jackpon/posts ）我的Gitblog上也有；
+# 也可以在知乎私信给我Jackpon(https://www.zhihu.com/people/Jackpon/activities )，尽我所能帮助 *_*!
