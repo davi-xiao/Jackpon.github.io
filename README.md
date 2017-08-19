@@ -20,5 +20,5 @@ _posts：这里面装的就是你的博文啦，记住，要用markdown语法写
 ### 3. 修改_config.yml、about.md、README.md和_posts；（修改样式在_sass）
 ### 4. 最后一步，将该项目git push到你的项目
 
-### 补充：对于git的基本操作如果不熟悉可以看看我的一篇文章——Git入门操作（https://www.zhihu.com/people/Jackpon/posts ）我的Gitblog上也有；
-### 也可以在知乎私信给我Jackpon(https://www.zhihu.com/people/Jackpon)，尽我所能帮助 *_*!
+### 补充：对于git的基本操作如果不熟悉可以看看我在知乎的一篇文章——Git入门操作（https://www.zhihu.com/people/Jackpon/posts ）我的Gitblog上也有；
+### 也可以在知乎私信给我，尽我所能帮助 *_*!
