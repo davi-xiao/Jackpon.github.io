@@ -1,8 +1,8 @@
-## Welcome to Jackpon Gitblog
+## Welcome to Xiaobo Gitblog
 该博客是利用 GitHub Pages+Jekyll 搭建而成，并参照了Jekyll的开源模板，
 在此非常感谢GitHub Pages这么好用的项目，也感谢为此模板做出贡献的大佬们，
 该模板是走简约风格，但却很实用，功能就：看博文和作者简介；
-详情欢迎访问我的Gitblog：https://jackpon.github.io
+详情欢迎访问我的Gitblog：https://xiaobo.github.io
 
 ## 如果你对此感兴趣
 那么你只需几个步骤就可以搭建基于GitHub Pages的个人博客网站；
@@ -19,6 +19,3 @@ _posts：这里面装的就是你的博文啦，记住，要用markdown语法写
 ### 2. git clone到你本地，修改一下文件；
 ### 3. 修改_config.yml、about.md、README.md和_posts；（修改样式在_sass）
 ### 4. 最后一步，将该项目git push到你的项目
-
-### 补充：对于git的基本操作如果不熟悉可以看看我在知乎的一篇文章——Git入门操作（https://www.zhihu.com/people/Jackpon/posts ）我的Gitblog上也有；
-### 也可以在知乎私信给我，尽我所能帮助 *_*!

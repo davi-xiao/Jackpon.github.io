@@ -1,12 +1,12 @@
 # Site Info
-title:              "Jackpon"
+title:              "Xiaobo"
 description:        "A young idler, an old beggar!"
 
 # Author Info
-author_name:        "Jackpon" # Your name here
-author_email:       JackpongWong@163.com # Your email here
+author_name:        "Xiaobo" # Your name here
+author_email:       80499549@qq.com # Your email here
 author_gravatar:    2b38b1b0e7e08b69379bd61582adf0c8 # Your Gravatar md5 hash here for logo
-github_username:    Jackpon # Your GitHub username here
+github_username:    davi-xiao # Your GitHub username here
 
 # Site Settings
 baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
@@ -27,7 +27,6 @@ include:            [ "robots.txt" ]
 exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
 gems:
   - jekyll-sitemap
-
 
 
 defaults:

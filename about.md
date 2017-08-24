@@ -1,15 +1,15 @@
 ---
 layout: page
-title: Jackpon
+title: Xiaobo
 ---
 
 Hello！
-我是Jackpon
-这是本人的博客，主要是用来记录我的技术感想以及发现bug>>debug的过程，我的知识尚缺乏，分享出来主要是想大家一起探讨，互相学习，希望各位大佬不吝赐教 ^_^! 
+我是Xiaobo
+这是本人的博客，主要是用来记录我的技术感想以及发现bug>>debug的过程^_^! 
 
 
-* 知乎：<a href="https://www.zhihu.com/people/Jackpon">Jackpon</a>
-* CSDN: <a href="http://blog.csdn.net/Jackponwong">Jackpon</a>
-* GitHub：<a href="https://github.com/Jackpon">Jackpon</a>
-* 邮箱: JackpongWong@163.com
-* 座右铭: A young idler, an old beggar!
+* 知乎：<a href="https://www.zhihu.com/people/davi-xiao">davi-xiao</a>
+* CSDN: <a href="http://blog.csdn.net/skykiller007">Davi-xiao</a>
+* GitHub：<a href="https://github.com/davi-xiao">davi-xiao</a>
+* 邮箱: 80499549@qq.com
+* 座右铭: The question is used to solve the sentence 
